@@ -1,0 +1,46 @@
+<nav class="navbar bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      Statistique : Nombre de Malade VIH par Région 
+    </a>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+       November 2022
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Janvier</a></li>
+        <li><a class="dropdown-item" href="#">Fevrier</a></li>
+        <li><a class="dropdown-item" href="#">Mars</a></li>
+        <li><a class="dropdown-item" href="#">Avril</a></li>
+        <li><a class="dropdown-item" href="#">Mai</a></li>
+        <li><a class="dropdown-item" href="#">Juin</a></li>
+        <li><a class="dropdown-item" href="#">Juillet</a></li>
+        <li><a class="dropdown-item" href="#">Aout</a></li>
+        <li><a class="dropdown-item" href="#">September</a></li>
+        <li><a class="dropdown-item" href="#">October</a></li>
+        <li><a class="dropdown-item" href="#">November</a></li>
+        <li><a class="dropdown-item" href="#">December</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+</nav>
+
+
+<br>
+<br>
+<br>
+
+<div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [dataLabels]="chartOptions.dataLabels"
+      [plotOptions]="chartOptions.plotOptions"
+      [yaxis]="chartOptions.yaxis"
+      [xaxis]="chartOptions.xaxis"
+      [legend]="chartOptions.legend"
+      [colors]="chartOptions.colors"
+      [grid]="chartOptions.grid"
+    ></apx-chart>
+  </div>
